@@ -1,0 +1,203 @@
+{
+  "atomKeymap.promptV3Features": true,
+  /* better comments */
+  "better-comments.highlightPlainText": true,
+  /* bracket pair */
+  "bracketPairColorizer.highlightActiveScope": true,
+  /* breadcrumbs */
+  "breadcrumbs.enabled": true,
+  /* color highlight */
+  "color-highlight.markerType": "underline",
+  "color-highlight.markRuler": false,
+  /* editor */
+  "editor.fontFamily": "Fira Code",
+  "editor.fontLigatures": true,
+  "editor.multiCursorModifier": "ctrlCmd",
+  "editor.tabSize": 2,
+  "editor.wordWrap": "bounded",
+  "editor.wordWrapColumn": 100,
+  "editor.fontSize": 14,
+  "editor.formatOnPaste": true,
+  "editor.formatOnSave": true,
+  "editor.minimap.enabled": false,
+  "editor.cursorBlinking": "smooth",
+  "diffEditor.ignoreTrimWhitespace": false,
+  /* eslint */
+  "eslint.alwaysShowStatus": true,
+  "eslint.autoFixOnSave": true,
+  "eslint.validate": ["javascript", "javascriptreact", "html"],
+  /* emmet */
+  "emmet.syntaxProfiles": {
+    "javascript": "jsx"
+  },
+  "emmet.includeLanguages": {
+    "html": "html",
+    "javascript": "javascriptreact"
+  },
+  "explorer.confirmDelete": false,
+  /* files */
+  "files.autoSave": "afterDelay",
+  "files.autoSaveDelay": 3000,
+  "files.trimTrailingWhitespace": true,
+  "files.exclude": {
+    "**/node_modules": true
+  },
+  /* html */
+  "html-css-class-completion.enableEmmetSupport": true,
+  "html.format.indentInnerHtml": true,
+  "html.format.wrapLineLength": 100,
+  /* javascript */
+  "[javascript]": {
+    "editor.formatOnSave": false
+  },
+  "[javascriptreact]": {
+    "editor.formatOnSave": false
+  },
+  "javascript.validate.enable": true,
+  "javascript.updateImportsOnFileMove.enabled": "always",
+  /* git */
+  "git.enableSmartCommit": true,
+  /* indent rainbow */
+  "indentRainbow.colors": [
+    "rgba(16,16,16,0.1)",
+    "rgba(16,16,16,0.2)",
+    "rgba(16,16,16,0.3)",
+    "rgba(16,16,16,0.4)",
+    "rgba(16,16,16,0.5)",
+    "rgba(16,16,16,0.6)",
+    "rgba(16,16,16,0.7)",
+    "rgba(16,16,16,0.8)",
+    "rgba(16,16,16,0.9)",
+    "rgba(16,16,16,1.0)"
+  ],
+  "indentRainbow.includedLanguages": [],
+  /* markdown */
+  "[markdown]": {
+    "editor.renderWhitespace": "all",
+    "editor.acceptSuggestionOnEnter": "off",
+    "editor.parameterHints.enabled": false,
+    "editor.quickSuggestions": false,
+    "editor.snippetSuggestions": "none"
+  },
+  /* peacock */
+  "peacock.favoriteColors": [
+    {
+      "name": "Angular Red",
+      "value": "#b52e31"
+    },
+    {
+      "name": "Auth0 Orange",
+      "value": "#eb5424"
+    },
+    {
+      "name": "Azure Blue",
+      "value": "#007fff"
+    },
+    {
+      "name": "C# Purple",
+      "value": "#68217A"
+    },
+    {
+      "name": "Gatsby Purple",
+      "value": "#639"
+    },
+    {
+      "name": "Go Cyan",
+      "value": "#5dc9e2"
+    },
+    {
+      "name": "Java Blue-Gray",
+      "value": "#557c9b"
+    },
+    {
+      "name": "JavaScript Yellow",
+      "value": "#f9e64f"
+    },
+    {
+      "name": "Mandalorian Blue",
+      "value": "#1857a4"
+    },
+    {
+      "name": "Node Green",
+      "value": "#215732"
+    },
+    {
+      "name": "React Blue",
+      "value": "#00b3e6"
+    },
+    {
+      "name": "Something Different",
+      "value": "#832561"
+    },
+    {
+      "name": "Vue Green",
+      "value": "#42b883"
+    },
+    {
+      "name": "Airbnb Brand",
+      "value": "#fd5c63"
+    }
+  ],
+  "peacock.affectActivityBar": true,
+  "peacock.affectTitleBar": false,
+  /* prettier */
+  "prettier.jsxBracketSameLine": true,
+  "prettier.disableLanguages": ["javascript", "javascriptreact"],
+  "prettier.printWidth": 100,
+  /* rewrap */
+  "rewrap.wrappingColumn": 0,
+  "rewrap.doubleSentenceSpacing": true,
+  "rewrap.wholeComment": true,
+  "rewrap.reformat": false,
+  "rewrap.autoWrap.enabled": true,
+  /* terminal */
+  "terminal.integrated.fontFamily": "Fira Code",
+  "terminal.integrated.shell.osx": "zsh",
+  "terminal.integrated.cursorBlinking": true,
+  "terminal.integrated.fontWeightBold": "normal",
+  "terminal.integrated.fontWeight": "400",
+  "terminal.integrated.fontSize": 14,
+  /* TCL */
+  "turboConsoleLog.quote": "'",
+  /* trailing-spaces */
+  "trailing-spaces.includeEmptyLines": false,
+  /* todo */
+  "todo-tree.statusBar": "total",
+  /* workbench */
+  "workbench.activityBar.visible": true,
+  "workbench.colorTheme": "Monokai Pro (Filter Octagon)",
+  "workbench.iconTheme": "Monokai Pro (Filter Octagon) Icons",
+  "workbench.sideBar.location": "right",
+  "workbench.colorCustomizations": {
+    "list.activeSelectionForeground": "#84FFFF",
+    "list.inactiveSelectionForeground": "#84FFFF",
+    "list.highlightForeground": "#84FFFF",
+    "scrollbarSlider.activeBackground": "#84FFFF50",
+    "editorSuggestWidget.highlightForeground": "#84FFFF",
+    "textLink.foreground": "#84FFFF",
+    "progressBar.background": "#84FFFF",
+    "pickerGroup.foreground": "#84FFFF",
+    "tab.activeBorder": "#84FFFF",
+    "notificationLink.foreground": "#84FFFF",
+    "editorWidget.resizeBorder": "#84FFFF",
+    "editorWidget.border": "#84FFFF",
+    "settings.modifiedItemIndicator": "#84FFFF",
+    "settings.headerForeground": "#84FFFF",
+    "panelTitle.activeBorder": "#84FFFF",
+    "breadcrumb.activeSelectionForeground": "#84FFFF",
+    "menu.selectionForeground": "#84FFFF",
+    "menubar.selectionForeground": "#84FFFF",
+    "editor.findMatchBorder": "#84FFFF",
+    "selection.background": "#84FFFF40",
+    "activityBar.background": "#88d7ea",
+    "activityBar.foreground": "#15202b",
+    "activityBar.inactiveForeground": "#15202b99",
+    "activityBarBadge.background": "#de41bf",
+    "activityBarBadge.foreground": "#e7e7e7",
+    "statusBar.background": "#5dc9e2",
+    "statusBarItem.hoverBackground": "#32bbda",
+    "statusBar.foreground": "#15202b"
+  },
+  "materialTheme.accent": "Sky",
+  "wrap-console-log-simple.useSemicolon": false
+}
