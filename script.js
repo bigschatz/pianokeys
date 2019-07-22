@@ -1,6 +1,5 @@
 /* eslint-disable no-use-before-define */
 /* the keys and notes variables store the piano keys */
-document.getElementById('name')
 const pianoKeys = [
   'c-key',
   'd-key',
