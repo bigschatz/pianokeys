@@ -44,24 +44,20 @@ body {
   background-color: white;
   color: #141c3a;
   cursor: pointer;
+  transition: all 0.1s;
 }
 
-.black-key {
+.black {
   width: 23px;
   height: 110px;
-  display: inline-block;
+  border: none;
+  box-shadow: none;
   background-color: #141c3a;
   color: white;
   position: absolute;
   margin-left: -13px;
   border-radius: 4px;
   cursor: pointer;
-}
-
-.key:hover,
-.black-key:hover {
-  background-color: #fd4d3f;
-  box-shadow: #141c3a 2px 5px;
 }
 
 .keynote {
@@ -81,6 +77,12 @@ body {
   display: block;
   margin: 0 auto;
   margin-top: 86px;
+}
+
+.playing {
+  transform: scale(1.05);
+  background-color: #fd4d3f;
+  box-shadow: 0 0 8px black;
 }
 
 #lyrics {
@@ -139,10 +141,10 @@ body {
   margin-left: 35px;
 }
 
-#first-next-line,
-#second-next-line,
-#third-next-line,
-#fourth-next-line {
+#line-two,
+#line-three,
+#line-four,
+#reset {
   width: 80px;
   height: 40px;
   font-size: 16px;
