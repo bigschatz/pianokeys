@@ -1,5 +1,6 @@
 /* eslint-disable no-use-before-define */
 /* the keys and notes variables store the piano keys */
+const notes = []
 const pianoKeys = [
   'c-key',
   'd-key',
@@ -42,7 +43,6 @@ const reset = document.getElementById('reset')
 const lastLyric = document.getElementById('column-optional')
 
 /* get all html elements into notes array */
-const notes = []
 pianoKeys.forEach(key => notes.push(document.getElementById(key)))
 
 /* create color change events for keys */
@@ -57,6 +57,14 @@ const enableNoteColorChange = note => {
 
 /* assign color change event handler for every note */
 notes.forEach(note => enableNoteColorChange(note))
+
+/* attach transition end listener to each key */
+const keys = document.querySelectorAll('.key')
+keys.forEach(key => key.addEventListener('click', clickSound))
+keys.forEach(key => key.addEventListener('transitionend', removeTransition))
+
+/* play element on page equal to data-key */
+window.addEventListener('keydown', playSound)
 
 /* default */
 resetButtons()
@@ -118,6 +126,7 @@ function resetButtons() {
   reset.hidden = true
 }
 
+/* assign sound file trigger to keyboard */
 function playSound(event) {
   const audio = document.querySelector(`audio[data-key="${event.keyCode}"]`)
   const key = document.querySelector(`.key[data-key="${event.keyCode}"]`)
@@ -127,14 +136,17 @@ function playSound(event) {
   key.classList.add('playing')
 }
 
-function removeTransition(event) {
-  if (event.propertyName !== 'transform') return // skip if not a transform event
-  this.classList.remove('playing')
+/* assign sound file trigger to mouse clicks on keys */
+function clickSound(event) {
+  const audio = document.querySelector(`audio[data-key="${event.target.dataset.key}"]`)
+  const key = document.querySelector(`.key[data-key="${event.target.dataset.key}"]`)
+  if (!audio) return
+  audio.currentTime = 0
+  audio.play()
+  key.classList.add('playing')
 }
 
-/* attach transition end listener to each key */
-const keys = document.querySelectorAll('.key')
-keys.forEach(key => key.addEventListener('transitionend', removeTransition))
-
-/* play element on page equal to data-key */
-window.addEventListener('keydown', playSound)
+function removeTransition(event) {
+  if (event.propertyName !== 'transform') return // do not return anything if not a transform event
+  this.classList.remove('playing')
+}
